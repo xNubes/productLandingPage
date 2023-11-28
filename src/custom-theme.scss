@@ -1,0 +1,26 @@
+@use '@angular/material' as mat;
+@import 'colors.scss';
+@include mat.core();
+
+
+
+$page-primary: mat.define-palette($landing-page-primary-palette);
+$page-accent: mat.define-palette($landing-page-accent-palette);
+$page-warn: mat.define-palette($landing-page-warn-palette);
+$page-text: mat.define-palette($landing-page-text-palette);
+
+$landing-page-app-theme: mat.define-light-theme(
+    (
+      color: (
+        primary: $landing-page-primary,
+        accent: $landing-page-accent,
+        warn: $landing-page-warn,
+        text: $landing-page-text,
+      ),
+        typography: mat.define-typography-config(),
+        density: 0,
+    )
+);
+
+@include mat.all-component-themes($landing-page-app-theme);
+

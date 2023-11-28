@@ -1,0 +1,110 @@
+$landing-page-primary-palette: (
+  50: #faf7f6,
+  100: #f2efee,
+  200: #e7e4e3,
+  300: #d5d3d2,
+  400: #b1aead,
+  500: #908e8d,
+  600: #696665,
+  700: #555352,
+  800: #373534,
+  900: #171514,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #FFFFFF,
+    600: #FFFFFF,
+    700: #FFFFFF,
+    800: #FFFFFF,
+    900: #FFFFFF,
+  )
+);
+
+
+$landing-page-accent-palette: (
+  50: #fefaf7,
+  100: #f9f5f2,
+  200: #f4f1ed,
+  300: #e8e5e1,
+  400: #c6c2bf,
+  500: #a7a4a1,
+  600: #7d7a77,
+  700: #696663,
+  800: #4a4744,
+  900: #282523,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #FFFFFF,
+    600: #FFFFFF,
+    700: #FFFFFF,
+    800: #FFFFFF,
+    900: #FFFFFF,
+  )
+);
+
+$landing-page-warn-palette: (
+  50: #fee8e7,
+  100: #ffcabb,
+  200: #ffa68f,
+  300: #ff8162,
+  400: #ff6140,
+  500: #ff3c1e,
+  600: #ff3519,
+  700: #fb2c13,
+  800: #ed220d,
+  900: #d50000,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #FFFFFF,
+    600: #FFFFFF,
+    700: #FFFFFF,
+    800: #FFFFFF,
+    900: #FFFFFF,
+  )
+);
+
+$landing-page-text-palette: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #FFFFFF,
+    600: #FFFFFF,
+    700: #FFFFFF,
+    800: #FFFFFF,
+    900: #FFFFFF,   
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #FFFFFF,
+    600: #FFFFFF,
+    700: #FFFFFF,
+    800: #FFFFFF,
+    900: #FFFFFF,
+  )
+);
+
+
+$primary-color: map-get($landing-page-primary-palette, 800);
+$primary-color-light: map-get($landing-page-primary-palette, 50);
+$accent-color: map-get($landing-page-accent-palette, 700);
+$accent-color-light: map-get($landing-page-accent-palette, 100);
+$warn-color: map-get($landing-page-warn-palette, 900);
+$warn-color-light: map-get($landing-page-warn-palette, 100);
+$text-color-light: map-get($landing-page-text-palette, 500);
+$text-color: map-get($landing-page-text-palette, 100);
